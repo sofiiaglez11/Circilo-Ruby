@@ -50,9 +50,8 @@ include Circulos
       #prueba de asociacion envolvente
       ce = Circulo.new_parametros(5.0, 0, 0)
 
-      cua = Cuadrado.new(10.0,0,0)
-      #cua = Cuadrado.new(5,0,0)
-      #
+      cua = Cuadrado.new(10.0,0,0)  #es una envolvente válida
+      #cua = Cuadrado.new(1,0,0)      #envolvente no válida
       ce.envolvente=cua
 
       puts ce.pintar
