@@ -4,6 +4,7 @@
 
 require_relative 'circulo'
 require_relative 'cuadrado'
+require_relative 'cuadro'
 #module Circulos
 
 include Circulos
@@ -56,7 +57,15 @@ include Circulos
 
       puts ce.pintar
 
+
+      #prueba de composición
+
+      muchos_circulos = Cuadro.new("Muchos Circulos")
+      muchos_circulos.add_circulo(4, 0, 0)
+
+
     end
   end
+#end
 
 Main.new.main
