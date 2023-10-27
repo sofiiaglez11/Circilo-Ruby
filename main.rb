@@ -5,6 +5,7 @@
 require_relative 'circulo'
 require_relative 'cuadrado'
 require_relative 'cuadro'
+require_relative 'comprador'
 
 #module Circulos
 
@@ -60,9 +61,18 @@ include Circulos
 
 
       #prueba de composición
-
       muchos_circulos = Cuadro.new("Muchos Circulos")
       muchos_circulos.add_circulo(4, 0, 0)
+
+
+      #prueba de clase de asociacion
+      yo = Comprador.new("Yo")
+      yo.pujar(muchos_circulos,100)
+      tu = Comprador.new("tu")
+      tu.pujar(muchos_circulos,150) #pujar establece 4 relaciones (entre puja con comprador y cuadro)
+      ganador = muchos_circulos.ganador_subasta
+
+
 
 
     end

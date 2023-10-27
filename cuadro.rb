@@ -1,11 +1,13 @@
 # frozen_string_literal: true
 require_relative 'circulo'
+require_relative 'puja'
 
 module Circulos
   class Cuadro
     def initialize(titulo)
       @titulo = titulo
       @circulos = []
+      @pujas = []
 
     end
 
@@ -23,6 +25,24 @@ module Circulos
     #   cir = Circulo.new(cir.radio, cir.z, cir.y)
     #   @circulo << cir
     # end
+
+    def add_puja(puja)
+      @pujas << puja
+    end
+
+    def ganador_subasta
+      max=0
+      ganador=nil
+
+      for puja in @pujas
+        if (puja.precio>max)
+          mayor_puja = puja.precio
+          ganador=puja.comprador
+        end
+      end
+
+      ganador
+    end
 
   end
 

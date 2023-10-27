@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative 'puja'
 module Circulos
   class Comprador
     def initialize(nombre)
@@ -10,8 +11,9 @@ module Circulos
       def pujar (cua, precio)
         puja = Puja.new(precio, cua, self)
         @pujas << puja
-        cua .addPuja(puja)
+        cua .add_puja(puja)
       end
+
   end
 
 end
