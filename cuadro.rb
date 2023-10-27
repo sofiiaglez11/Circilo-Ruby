@@ -45,8 +45,8 @@ module Circulos
     end
 
     def calcular_norte
-      #en vez de -9999 se pueden buscar constantes muy pequeñas -Float::INFINITY
-      norte = Punto.new(0,-99999) #1
+      #en vez de -9999 se pueden buscar constantes muy pequeñas -
+      norte = Punto.new(0,-Float::INFINITY) #1
 
       for circulo in @circulos
         nor_circulo = circulo.norte
