@@ -72,7 +72,14 @@ include Circulos
       tu.pujar(muchos_circulos,150) #pujar establece 4 relaciones (entre puja con comprador y cuadro)
       ganador = muchos_circulos.ganador_subasta
 
+      yo.mejorar_puja(muchos_circulos,100)
 
+
+      muchos_circulos.add_circulo(5,0,0)
+      muchos_circulos.add_circulo(3,4,4)
+      muchos_circulos.add_circulo(2,-3,-3)
+
+      norte = muchos_circulos.calcular_norte
 
 
     end

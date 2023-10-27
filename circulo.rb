@@ -68,7 +68,7 @@ module Circulos
                ",centro " + @x.to_s + ", " + @y.to_s
       else
         puts "El circulo tiene radio: " + @radio.to_s +
-               ",centro " + @x.to_s + ", " + @y.to_s +
+               ", centro " + @x.to_s + ", " + @y.to_s +
                " y envolvente de lado " + @envolvente.lado.to_s
       end
     end
