@@ -6,7 +6,7 @@ require_relative 'circulo'
 require_relative 'cuadrado'
 require_relative 'cuadro'
 require_relative 'comprador'
-
+require_relative 'rueda'
 #module Circulos
 
 include Circulos
@@ -81,6 +81,11 @@ include Circulos
 
       norte = muchos_circulos.calcular_norte
 
+
+      # prueba de herencia
+      rueda = Rueda.new(5,-1,1,3)
+
+      rueda.area
 
     end
   end

@@ -73,10 +73,14 @@ module Circulos
       end
     end
 
-    private_class_method :new
+    public_class_method :new
 
     def norte
       Punto.new(@x, @y+@radio)
+    end
+
+    def area
+      Math::PI * @radio * @radio
     end
 
   end
