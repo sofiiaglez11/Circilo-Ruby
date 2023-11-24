@@ -87,6 +87,15 @@ include Circulos
 
       rueda.area
 
+      # asignacion de polimorfismo
+      circulo2 = Circulo.new_default
+      rueda2 = Rueda.new(5, 0,0,3)
+
+      rueda3 = circulo2 # no hay declaración de tipos, to do es polimórfico
+      circulo3 = rueda2
+
+      circulo3 = circulo2   #el puntero pasa de apuntar a una rueda a un círculo
+
     end
   end
 #end
