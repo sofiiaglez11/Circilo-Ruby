@@ -94,7 +94,11 @@ include Circulos
       rueda3 = circulo2 # no hay declaración de tipos, to do es polimórfico
       circulo3 = rueda2
 
-      circulo3 = circulo2   #el puntero pasa de apuntar a una rueda a un círculo
+      # circulo3 = circulo2   #el puntero pasa de apuntar a una rueda a un círculo
+
+      circulo3.area       # área de Rueda
+      circulo3=circulo2
+      circulo3.area       # área de Ciruculo
 
     end
   end
