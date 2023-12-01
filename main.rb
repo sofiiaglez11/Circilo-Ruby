@@ -7,6 +7,7 @@ require_relative 'cuadrado'
 require_relative 'cuadro'
 require_relative 'comprador'
 require_relative 'rueda'
+require_relative 'figura'
 #module Circulos
 
 include Circulos
@@ -99,6 +100,14 @@ include Circulos
       circulo3.area       # área de Rueda
       circulo3=circulo2
       circulo3.area       # área de Ciruculo
+
+      #prueba de clases abstractas
+      fig = Figura.new(0)
+      c1 = Circulo.new_default
+      cua1 = Cuadrado.new(3,1,0)
+
+
+
 
     end
   end

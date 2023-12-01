@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 module Circulos
-  class Cuadrado
+  require_relative 'figura'
+  class Cuadrado < Figura
 
     def initialize (lado, x, y)
+      super(0)
       @lado = lado
       @x = x
       @y = y
@@ -17,5 +19,8 @@ module Circulos
       " lado: " + @lado.to_s + " y centro: " + @x.to_s + ", " + @y.to_s
     end
 
+    def perimetro
+      @lado*4
+    end
   end
 end

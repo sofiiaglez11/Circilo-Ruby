@@ -3,7 +3,8 @@
 module Circulos
   require_relative 'punto'
   require_relative 'cuadrado'
-  class Circulo
+  require_relative 'figura'
+  class Circulo < Figura
     @@num_circulos = 0
     @@RADIO_DEFECTO=1.0
 
@@ -12,6 +13,7 @@ module Circulos
     end
 
     def initialize (radio, x, y)
+      super(0)
       self.radio=radio
       @x = x
       @y = y
@@ -81,6 +83,10 @@ module Circulos
 
     def area
       Math::PI * @radio * @radio
+    end
+
+    def perimetro
+      Math::PI * 2* radio
     end
 
   end
