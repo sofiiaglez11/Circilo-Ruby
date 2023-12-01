@@ -5,6 +5,8 @@ module Circulos
   require_relative 'cuadrado'
   require_relative 'figura'
   class Circulo < Figura
+    public_class_method :new
+
     @@num_circulos = 0
     @@RADIO_DEFECTO=1.0
 

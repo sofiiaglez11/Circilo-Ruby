@@ -13,6 +13,8 @@ module Circulos
     def perimetro
     end
 
+    private_class_method :new #para decir que la clase no se puede instanciar
+
   end
 end
 

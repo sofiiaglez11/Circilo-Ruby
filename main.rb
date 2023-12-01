@@ -102,12 +102,11 @@ include Circulos
       circulo3.area       # área de Ciruculo
 
       #prueba de clases abstractas
-      fig = Figura.new(0)
-      c1 = Circulo.new_default
-      cua1 = Cuadrado.new(3,1,0)
-
-
-
+      # fig = Figura.new(0)  es una clase "abstracta", hemos puesto el método new privado para no poder instanciarla
+      fig2 = Circulo.new_default
+      per=fig2.perimetro
+      fig2 = Cuadrado.new(3,1,0)
+      per=fig2.perimetro
 
     end
   end

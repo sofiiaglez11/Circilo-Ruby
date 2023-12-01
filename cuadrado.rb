@@ -3,6 +3,7 @@
 module Circulos
   require_relative 'figura'
   class Cuadrado < Figura
+    public_class_method :new
 
     def initialize (lado, x, y)
       super(0)

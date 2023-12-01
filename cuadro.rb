@@ -4,6 +4,7 @@ require_relative 'puja'
 
 module Circulos
   class Cuadro
+
     def initialize(titulo)
       @titulo = titulo
       @circulos = []
