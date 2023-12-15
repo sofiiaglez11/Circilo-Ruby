@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'circulo'
+require_relative 'inflable'
 module Circulos
   class Rueda < Circulo
 
@@ -26,6 +27,7 @@ module Circulos
       @@num_circulos
     end
 
+    include Inflable # copia lo que haya en inflable
   end
 end
 

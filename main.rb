@@ -120,8 +120,8 @@ include Circulos
       # no se permite llamar a métodos de clase desde instancias
       # cc.cuantos_circulos_hay
 
-
-
+      #prueba de herencia múltiple
+      cc.inflar(5)
     end
   end
 #end
