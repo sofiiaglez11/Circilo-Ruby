@@ -11,6 +11,7 @@ module Circulos
     @@RADIO_DEFECTO=1.0
 
     def self.cuantos_circulos_hay
+      puts "Hay " + @@num_circulos.to_s + " circulos"
       return @@num_circulos
     end
 

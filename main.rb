@@ -108,6 +108,11 @@ include Circulos
       fig2 = Cuadrado.new(3,1,0)
       per=fig2.perimetro
 
+
+      #prueba de herencia de clases
+      Circulo.cuantos_circulos_hay
+      Rueda.cuantos_circulos_hay
+
     end
   end
 #end

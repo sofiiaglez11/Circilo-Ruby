@@ -17,6 +17,15 @@ module Circulos
       area_exterior-area_interior
     end
 
+    # redefinir el método de clase
+    def self.cuantos_circulos_hay
+      # no se pone super.cuantos_circulos_hay, porque super no es un puntero
+      super
+      puts "circulos contando las ruedas"
+
+      @@num_circulos
+    end
+
   end
 end
 
