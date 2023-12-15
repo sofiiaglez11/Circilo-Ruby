@@ -113,6 +113,15 @@ include Circulos
       Circulo.cuantos_circulos_hay
       Rueda.cuantos_circulos_hay
 
+      # prueba de ligadura dinámica y métodos de clase
+      cc = Rueda.new(5,1.0,1.0,3)
+
+      # da error, no conode ningún método para rueda,
+      # no se permite llamar a métodos de clase desde instancias
+      # cc.cuantos_circulos_hay
+
+
+
     end
   end
 #end
