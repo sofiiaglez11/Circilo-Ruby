@@ -2,6 +2,7 @@
 
 module Circulos
   class Punto
+    # todas las clases son parametrizables
     def initialize (x, y)
       @x=x
       @y=y

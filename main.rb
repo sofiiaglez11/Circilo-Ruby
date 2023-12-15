@@ -121,7 +121,13 @@ include Circulos
       # cc.cuantos_circulos_hay
 
       #prueba de herencia múltiple
+      # se utiliza una inclusión de módulos para simular la herencia múltiple
       cc.inflar(5)
+
+
+      # prueba de clases parametrizables
+      punto_booleano = Punto.new(true, 5.0)
+
     end
   end
 #end
