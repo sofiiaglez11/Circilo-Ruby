@@ -51,6 +51,13 @@ module Circulos
       copia
     end
 
+    # redefinir clone para que haga copia profunda
+    def clone
+      copia = super
+      copia.envolvente=@envolvente.clone #no hace falta hacer la comprobación de si es nil
+      copia
+    end
+
     #def radio
     #  @radio
     #end
@@ -102,6 +109,10 @@ module Circulos
     def perimetro
       Math::PI * 2* radio
     end
+
+    #reflexión
+
+
 
   end
 end

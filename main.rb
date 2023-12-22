@@ -142,12 +142,21 @@ include Circulos
       #copia.radio=8
 
       # copia utilizando el método clone
+      # clone hace una copia superficial (ha copiado el estado de manera superficial)
+      # para que haga una copia profunda hay que redefinirlo
       env = Cuadrado.new(14,0,0)
       uno.envolvente=env
-      copia = uno.clone
+      copia = uno.clone # no se hace copia profunda de la envolvente
       copia.radio=8
 
 
+      #prueba de reflexión
+      rueda_voladora = Rueda.new(10,0,0,3)
+      rueda_voladora.inflar(5)
+      # como no se le infla con más de 10 de aire, no tiene el método de volar
+      #rueda_voladora.volar
+      rueda_voladora.inflar(20)
+      rueda_voladora.volar
 
     end
   end
