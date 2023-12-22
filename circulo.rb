@@ -39,11 +39,22 @@ module Circulos
       new(radio,x,y)
     end
 
+    def self.new_copia(otro)
+      copia = self.new_parametros(otro.radio,otro.x,otro.y) # necesitamos los readers para hacer esto
+      if otro.envolvente != nil
+        #copia superficial de la envolvente
+        #copia.envolvente =otro.envolvente
+        # #copia profunta
+        copia.envolvente=Cuadrado.new(otro.envolvente.lado, otro.envolvente.x, otro.envolvente.y)
+        # si no tuviéramos readers, tendría que habe run constructor de copia de cuadrado
+      end
+      copia
+    end
 
     #def radio
     #  @radio
     #end
-    attr_reader :radio, :x, :y
+    attr_reader :radio, :x, :y, :envolvente
 
     def radio=radio
       if radio>0

@@ -128,6 +128,27 @@ include Circulos
       # prueba de clases parametrizables
       punto_booleano = Punto.new(true, 5.0)
 
+      # prueba de copia
+      uno = Circulo.new(5,0,0)
+      dos = uno
+      # cuando se modifica el radio de 'dos'  se combia también el de 'uno'
+      dos.radio=7
+
+      # copia
+      # solo se modifica el radio de 'copia'
+      #env = Cuadrado.new(14,0,0)
+      #uno.envolvente=env
+      #copia = Circulo.new_copia(uno)
+      #copia.radio=8
+
+      # copia utilizando el método clone
+      env = Cuadrado.new(14,0,0)
+      uno.envolvente=env
+      copia = uno.clone
+      copia.radio=8
+
+
+
     end
   end
 #end
